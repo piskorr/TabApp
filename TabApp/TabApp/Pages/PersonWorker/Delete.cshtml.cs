@@ -12,14 +12,18 @@ namespace TabApp.Pages_PersonWorker
     public class DeleteModel : PageModel
     {
         private readonly PagePersonContext _context;
+        [BindProperty]
+        public Person Person { get; set; }
+        [BindProperty]
+        public Worker Worker { get; set; }
+
 
         public DeleteModel(PagePersonContext context)
         {
             _context = context;
         }
 
-        [BindProperty]
-        public PersonWorker PersonWorker { get; set; }
+
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,9 +32,9 @@ namespace TabApp.Pages_PersonWorker
                 return NotFound();
             }
 
-            PersonWorker = await _context.PersonWorker.FirstOrDefaultAsync(m => m.ID == id);
+            Worker = await _context.Worker.FirstOrDefaultAsync(m => m.PersonID == id);
 
-            if (PersonWorker == null)
+            if (Worker == null)
             {
                 return NotFound();
             }
@@ -44,15 +48,15 @@ namespace TabApp.Pages_PersonWorker
                 return NotFound();
             }
 
-            PersonWorker = await _context.PersonWorker.FindAsync(id);
+            Worker = await _context.Worker.FindAsync(id);
 
-            if (PersonWorker != null)
+            if (Worker != null)
             {
-                _context.PersonWorker.Remove(PersonWorker);
+                _context.Worker.Remove(Worker);
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./WorkerList");
         }
     }
 }

@@ -15,8 +15,9 @@ namespace TabApp.Pages_PersonWorker
         private readonly PagePersonContext _context;
 
         [BindProperty]
-        public Person _Person { get; set; }
-        public Worker _Worker { get; set; }
+        public Person Person { get; set; }
+        [BindProperty]
+        public Worker Worker { get; set; }
 
         public EditModel(PagePersonContext context)
         {
@@ -30,14 +31,14 @@ namespace TabApp.Pages_PersonWorker
                 return NotFound();
             }
 
-            _Person = await _context.Person.FirstOrDefaultAsync(m => m.ID == id);
-            _Worker = await _context.Worker.FirstOrDefaultAsync(m => m.PersonID == id);
+            Person = await _context.Person.FirstOrDefaultAsync(m => m.ID == id);
+            Worker = await _context.Worker.FirstOrDefaultAsync(m => m.PersonID == id);
 
-            if (_Person == null)
+            if (Person == null)
             {
                 return NotFound();
             }
-            if (_Worker == null)
+            if (Worker == null)
             {
                 return NotFound();
             }
@@ -51,7 +52,8 @@ namespace TabApp.Pages_PersonWorker
                 return Page();
             }
 
-            _context.Attach(_Person).State = EntityState.Modified;
+            _context.Attach(Person).State = EntityState.Modified;
+            _context.Attach(Worker).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +61,11 @@ namespace TabApp.Pages_PersonWorker
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PersonExists(_Person.ID))
+                if (!PersonExists(Person.ID))
+                {
+                    return NotFound();
+                }
+                else if (!WorkerExists(Person.ID))
                 {
                     return NotFound();
                 }
@@ -69,12 +75,17 @@ namespace TabApp.Pages_PersonWorker
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./WorkerList");
         }
 
         private bool PersonExists(int id)
         {
             return _context.Person.Any(e => e.ID == id);
+        }
+
+        private bool WorkerExists(int id)
+        {
+            return _context.Worker.Any(e => e.PersonID == id);
         }
     }
 }
