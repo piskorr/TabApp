@@ -14,13 +14,14 @@ namespace TabApp.Pages_PersonWorker
     {
         private readonly PagePersonContext _context;
 
+        [BindProperty]
+        public Person _Person { get; set; }
+        public Worker _Worker { get; set; }
+
         public EditModel(PagePersonContext context)
         {
             _context = context;
         }
-
-        [BindProperty]
-        public PersonWorker PersonWorker { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,17 +30,20 @@ namespace TabApp.Pages_PersonWorker
                 return NotFound();
             }
 
-            PersonWorker = await _context.PersonWorker.FirstOrDefaultAsync(m => m.ID == id);
+            _Person = await _context.Person.FirstOrDefaultAsync(m => m.ID == id);
+            _Worker = await _context.Worker.FirstOrDefaultAsync(m => m.PersonID == id);
 
-            if (PersonWorker == null)
+            if (_Person == null)
+            {
+                return NotFound();
+            }
+            if (_Worker == null)
             {
                 return NotFound();
             }
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -47,7 +51,7 @@ namespace TabApp.Pages_PersonWorker
                 return Page();
             }
 
-            _context.Attach(PersonWorker).State = EntityState.Modified;
+            _context.Attach(_Person).State = EntityState.Modified;
 
             try
             {
@@ -55,7 +59,7 @@ namespace TabApp.Pages_PersonWorker
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PersonWorkerExists(PersonWorker.ID))
+                if (!PersonExists(_Person.ID))
                 {
                     return NotFound();
                 }
@@ -68,9 +72,9 @@ namespace TabApp.Pages_PersonWorker
             return RedirectToPage("./Index");
         }
 
-        private bool PersonWorkerExists(int id)
+        private bool PersonExists(int id)
         {
-            return _context.PersonWorker.Any(e => e.ID == id);
+            return _context.Person.Any(e => e.ID == id);
         }
     }
 }

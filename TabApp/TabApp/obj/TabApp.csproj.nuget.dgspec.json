@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\TabApp2\\TabApp\\TabApp.csproj": {}
+    "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\TabApp2\\TabApp\\TabApp.csproj": {
+    "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\TabApp2\\TabApp\\TabApp.csproj",
+        "projectUniqueName": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
         "projectName": "TabApp",
-        "projectPath": "D:\\Repo\\TabApp2\\TabApp\\TabApp.csproj",
+        "projectPath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
         "packagesPath": "C:\\Users\\piskorr\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\TabApp2\\TabApp\\obj\\",
+        "outputPath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piskorr\\AppData\\Roaming\\NuGet\\NuGet.Config",

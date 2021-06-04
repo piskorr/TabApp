@@ -12,13 +12,13 @@ namespace TabApp.Pages_PersonWorker
     public class DetailsModel : PageModel
     {
         private readonly PagePersonContext _context;
+        public Person _Person { get; set; }
+        private Worker _Worker { get; set; }
 
         public DetailsModel(PagePersonContext context)
         {
             _context = context;
         }
-
-        public PersonWorker PersonWorker { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -27,9 +27,14 @@ namespace TabApp.Pages_PersonWorker
                 return NotFound();
             }
 
-            PersonWorker = await _context.PersonWorker.FirstOrDefaultAsync(m => m.ID == id);
+            _Person = await _context.Person.FirstOrDefaultAsync(m => m.ID == id);
+            _Worker = await _context.Worker.FirstOrDefaultAsync(m => m.PersonID == id);
 
-            if (PersonWorker == null)
+            if (_Person == null)
+            {
+                return NotFound();
+            }
+             if (_Worker == null)
             {
                 return NotFound();
             }

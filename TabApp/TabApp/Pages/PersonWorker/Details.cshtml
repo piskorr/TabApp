@@ -7,13 +7,68 @@
 
 <h1>Details</h1>
 
+
 <div>
-    <h4>PersonWorker</h4>
+    <h4>WORKER</h4>
     <hr />
     <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Surname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Surname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Worker.PESEL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Worker.PESEL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Worker.Earnings)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Worker.Earnings)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Worker.JobPosition)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Worker.JobPosition)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._Person.Worker.AccountNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._Person.Worker.AccountNumber)
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.PersonWorker.ID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model._Person.ID">Edit</a> |
+    <a asp-page="./WorkerList">Back to List</a>
 </div>

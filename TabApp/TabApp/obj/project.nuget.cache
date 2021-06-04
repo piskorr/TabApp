@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+KhnYj9w+21ateRZ5qknmmvshI3Tr+BwJMfIdwUkzsN2E8ttTqjoC1t5p/mNUeZ68P6gAB8Ak3Ba8pvRKqcGPQ==",
+  "dgSpecHash": "/iwKfZWZ7tvVmg1omFaA9YZ1ElEQydKHLQihiOColFMyfEvICQJOhantjou1mBpNn1KjSGJ7llD9rqTlCxNkWA==",
   "success": true,
-  "projectFilePath": "D:\\Repo\\TabApp2\\TabApp\\TabApp.csproj",
+  "projectFilePath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piskorr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.6\\microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
