@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\piskorr\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\piskorr\\.nuget\\packages"
+    ]
+  }
+}
