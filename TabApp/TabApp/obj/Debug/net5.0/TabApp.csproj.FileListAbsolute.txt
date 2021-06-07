@@ -806,3 +806,9 @@ D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\TabApp.genruntimeconfig.cache
 D:\Repo\tbapp\TabApp\TabApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\Repo\tbapp\TabApp\TabApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
