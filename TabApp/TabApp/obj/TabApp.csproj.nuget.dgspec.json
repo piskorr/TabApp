@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj": {}
+    "C:\\Users\\Mariusz\\Desktop\\TabApp\\TabApp\\TabApp\\TabApp.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj": {
+    "C:\\Users\\Mariusz\\Desktop\\TabApp\\TabApp\\TabApp\\TabApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mariusz\\Desktop\\TabApp\\TabApp\\TabApp\\TabApp.csproj",
         "projectName": "TabApp",
-        "projectPath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
-        "packagesPath": "C:\\Users\\piskorr\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\obj\\",
+        "projectPath": "C:\\Users\\Mariusz\\Desktop\\TabApp\\TabApp\\TabApp\\TabApp.csproj",
+        "packagesPath": "C:\\Users\\Mariusz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mariusz\\Desktop\\TabApp\\TabApp\\TabApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\piskorr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Mariusz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +42,10 @@
               "target": "Package",
               "version": "[5.0.6, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[5.0.6, )"
@@ -59,6 +61,12 @@
               "version": "[5.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.6, )"
             },
@@ -89,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
