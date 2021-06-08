@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/iwKfZWZ7tvVmg1omFaA9YZ1ElEQydKHLQihiOColFMyfEvICQJOhantjou1mBpNn1KjSGJ7llD9rqTlCxNkWA==",
+  "dgSpecHash": "hiAlWBe+vEt1MDkkzEsbCS18PVIuAafUnUxH7og4+NJD6vz7BtxldAw9oNvY2OQ878wBBGkGoR543e98+J2c1g==",
   "success": true,
   "projectFilePath": "D:\\Repo\\tbapp\\TabApp\\TabApp\\TabApp.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.6\\microsoft.aspnetcore.cryptography.keyderivation.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.6\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.6\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.6\\microsoft.aspnetcore.identity.ui.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
@@ -33,6 +34,7 @@
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.6\\microsoft.entityframeworkcore.sqlite.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.6\\microsoft.entityframeworkcore.sqlite.core.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.6\\microsoft.entityframeworkcore.sqlserver.5.0.6.nupkg.sha512",
+    "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.6\\microsoft.entityframeworkcore.tools.5.0.6.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\piskorr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
