@@ -20,6 +20,7 @@ namespace TabApp.Models
         public String Description { get; set; }
 
         public Person Person { get; set; }
+        
         public ICollection<Repair> Repair { get; set; }
     }
 

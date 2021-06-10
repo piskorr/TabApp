@@ -1,0 +1,73 @@
+@page
+@model TabApp.Pages_Repair.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].Item.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].Item.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].AdmissionDate)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Repair[0].IssueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].Cost)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].Warranty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].PickupCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Repair[0].Status)
+            </th>            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Repair) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdmissionDate)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.IssueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Warranty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PickupCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -184,6 +184,7 @@ namespace TabApp.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("ItemID")
+                        .IsRequired()
                         .HasColumnType("INTEGER");
 
                     b.Property<ulong>("PickupCode")
@@ -317,7 +318,9 @@ namespace TabApp.Migrations
                 {
                     b.HasOne("TabApp.Models.Item", "Item")
                         .WithMany("Repair")
-                        .HasForeignKey("ItemID");
+                        .HasForeignKey("ItemID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Item");
                 });

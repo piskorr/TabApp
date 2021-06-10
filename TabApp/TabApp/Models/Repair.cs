@@ -24,6 +24,8 @@ namespace TabApp.Models
 
         public ulong PickupCode {get; set;}
 
+        public int? ItemID { get; set; }
+
         public Item Item { get; set; }
 
         public Invoice Invoice { get; set; }

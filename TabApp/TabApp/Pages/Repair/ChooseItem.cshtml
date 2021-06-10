@@ -1,0 +1,46 @@
+@page
+@model TabApp.Pages_Repair.ChooseItemModel
+
+@{
+    ViewData["Title"] = "Items";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Item) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-page="./CreateRepair" asp-route-id="@item.ID">SELECT</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
