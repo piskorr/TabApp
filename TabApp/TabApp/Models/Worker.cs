@@ -7,7 +7,6 @@ namespace TabApp.Models
     public class Worker
     {
         [Key]
-        [ForeignKey("Person")]
         public int PersonID { get; set; }
 
         [DataType(DataType.Currency)]
@@ -29,6 +28,6 @@ namespace TabApp.Models
         [Required]
         public String JobPosition { get; set; }
 
-        public virtual Person Person { get; set; }
+        public Person Person { get; set; }
     }
 }
